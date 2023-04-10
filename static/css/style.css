@@ -1,3 +1,13 @@
+@font-face {
+  /* https://fonts.google.com/specimen/Open+Sans/about */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -7,4 +17,36 @@ body {
 body,
 html {
   height: 100%;
+}
+
+.legend {
+  padding: 6px 8px;
+  font: 14px "Open Sans", Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  line-height: 24px;
+  color: #555;
+  text-align: center;
+}
+.legend h4 {
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 8px 8px;
+  color: #555;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 0 10px;
+  border-style: solid;
+  border-color: #000;
+  border-width: thin;
+}
+
+.legend i.icon {
+  background-size: 18px;
+  background-color: rgba(255, 255, 255, 1);
 }
