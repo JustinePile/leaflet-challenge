@@ -75,14 +75,14 @@ function createMap(earthquakes) {
   let stamen = L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.png', {
     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>'
   });
-
-  let topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-  });
+  
+  let street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  })
 
   // Create a baseMaps object.
   let baseMaps = {
-    "Topographic Map": topo,
+    "Street Map": street,
     "Stamen Map": stamen
   };
 
@@ -97,7 +97,7 @@ function createMap(earthquakes) {
       51, -120
     ],
     zoom: 4,
-    layers: [stamen, topo, earthquakes]
+    layers: [stamen, street, earthquakes]
   });
 
   // Create a layer control
