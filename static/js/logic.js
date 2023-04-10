@@ -82,8 +82,8 @@ function createMap(earthquakes) {
 
   // Create a baseMaps object.
   let baseMaps = {
-    "Street Map": street,
-    "Stamen Map": stamen
+    "Terrain Map": stamen,
+    "Street Map": street
   };
 
   // Create an overlay object to hold our overlay.
