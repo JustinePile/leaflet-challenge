@@ -1,6 +1,6 @@
 # Leaflet map of earthquakes
 
-This Leaflet map displays USGS earthquake data for the last 30 days, with marker size dependant on magnitude and color scale depedant on depth of earthquake. The map has both a street view layer and a stamen terrain layer.   
+This Leaflet map displays USGS earthquake data for the last 30 days, with marker size dependant on magnitude and color scale dependant on depth of earthquake. The map has both a street view layer and a stamen terrain layer.   
 
 ![Leaflet Map](https://justinepile.github.io/images/LeafletMap.png)
 
